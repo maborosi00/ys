@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+
+    <span id="view_time"></span>
+    <script>
+    if (window.localStorage){
+        document.getElementById("result").innerHTML = "";}
+    </script>
+
+    <script type="text/javascript">
+shoki1:   
+    var dice2=0;
+    var dice3=5;
+    var dice4=0;
+    var h=0;
+    var k=0;
+    var F=0;
+    var HK=1; //game-haikei-:0-3
+    var ascore=0;
+    var sc1=0; //sc_kasann1
+
+    var str = localStorage.getItem("test");
+    var obj = JSON.parse(str);   
+    
+    var bscore =  obj;
+    if (bscore=="null"){bscore=0};
+    var hscore =[0,0,0,0,0] ;
+ 
+    var ZZ1 = [
+        "シャンシャンを助けて！",
+        "シャンシャンDEAD！！",
+        "pinkシャンシャンSAVE Clear！！"
+        ];
+//imeage-HK 0-3
+    var IMGHK = [
+        'url(images/s_omtesanndou_yume.png)',
+        'url(images/k20171208010831.jpg)',
+        'url(images/M20171207_174156.jpg)',
+        'url(images/k20171214_171025.jpg)'
+    ];
+
+    var kill=0;
+    var atime=1000; //qtimeshokichi
+    var qtime= atime; //kougekikaisuu
+    var btime=0;
+    var ctime=100;
+    var dtime=0;
+
+    var sc=0;
+    var cc=0;
+    var teki1=0;
+    var tsc=0;
+title:   
+    document.writeln("シャンシャンver.2.05".fontcolor("pink"));
+ </script>  
+</head>
+// <script>
+// function main1(){
+// background-size:auto;
+// document.body.style.backgroundImage = 'url(images/jituwa-run1.gif)' ;//IMGHK[ HK ];
+// }
+// </script>
+
+<script>
+      function main2(){
+ ssc ();
+//document.getElementById("view_time").innerHTML = getNow();
+    if ( dice3 == 5 ){ dice3 = 0;
+ 
+document.body.style.backgroundImage =IMGHK[ HK ];//HK
+    ++HK;
+    if ( HK == 4 ) { HK = 0; } }
+
+　　　　atime=atime-10;
+　　　　　if　(atime <= 1){
+　　　　 dice2 = 7; sc=0; F =1; kill++;
+　　　　image_name = "bakuhatu-big-touka.png"; 
+        atime = qtime;
+        
+　　　　　ascore= 0;k = 0; dice= 1000;
+           dice2 = 7;
+  //         dice3= 5;
+　　　　k++; ascore++;
+      }
+           
+            var dice = Math.floor(Math.random() *11);
+            var dice4 = Math.floor(Math.random() *100);
+            var image_name;
+            var vdice=dice4;
+            sc=sc+(dice++)*2+dice4;
+
+        if　(dice4 == 1){  dice2 = 7; dice3=5;
+            h++ ;
+            image_name = "shan-pink-touka-x.gif";
+               sc=sc+atime+(101-ascore)*10;
+               if (bscore < sc) {
+            
+                bscore=sc;
+    ssave ();
+            F=2;ascore= 0;k = 0; sc=0; 
+             atime=qtime;
+            }
+             
+        if　(dice2 == 0){  dice2 = 1;F= 0;sc=sc+20;// HK=0;
+        switch( dice ) {
+            case 0:image_name = "barrel2.png";break;
+            case 1:image_name = "cherry.png";break;   
+            case 2:image_name = "cappa.png";break;
+            case 3:image_name = "crystal.png";break;
+            case 4:image_name = "san.png";break;
+            case 5:image_name = "uroboros.png";break;
+            case 6:image_name = "snowman.png";break;
+            case 7:image_name = "seal.png";break;
+            case 8:image_name = "scissors.png";break;
+            case 9:image_name = "sasquatch.png";break;
+            case 10:image_name = "tetraodon.png";sc=sc+100;break;
+
+            default :break;}}
+
+        else if  (dice2 == 1) {dice2 = 2;sc=sc+10;F=0;
+        switch( dice ) {
+            case 0:image_name = "sandman.png";break;
+            case 1:image_name = "gold_maiden.png";break;
+            case 2:image_name = "iron_maiden.png";break;
+            case 3:image_name = "sand_dragon.png";break;
+            case 4:image_name = "sraim-m.png";break;
+            case 5:image_name = "tetraodon.png";break;
+            case 6:image_name = "akuma.png";break;
+            case 7:image_name = "antlion.png";break;
+            case 8:image_name = "candle.png";break;
+            case 9:image_name = "candle_white.png";break;
+            case 10:image_name = "barrel.png";break;
+            default :image_name = "knocker.png";sc=sc+100;break;}}
+
+            
+        else if  (dice2 == 2) {dice2 = 0;sc=sc+30;F=0;
+        switch( dice ) {            
+            case 0:image_name = "bell_silver.png";break;
+            case 1:image_name = "bell.png";break;
+            case 2:image_name = "bamboo.png";break;
+            case 3:image_name = "iron_maiden2.png";break;
+            case 4:image_name = "sraim.png";break;
+            case 5:image_name = "gold_maiden2.png";break;
+            case 6:image_name = "kangaroo.png";break;
+            case 7:image_name = "centipede.png";break;
+            case 8:image_name = "katydid.png";break;
+            case 9:image_name = "crystal.png";break;
+            default :image_name = "undine.png";sc=sc+100;break;}}
+    
+        else if ( dice2 == 7 ){ dice2 = 0;  }
+        document.getElementById("saisyo").style["display"] = "none";
+        document.getElementById("kekka").src = "images/m/" + image_name;
+        document.getElementById("kekka").style["display"] = "inline";
+    　　document.getElementById("button").src = "images/bu/shan_m2_attack.png";
+//        target = document.getElementById("output0");
+//        target.innerHTML = ZZ1 [ F ].fontcolor("red");
+//        target = document.getElementById("output1");
+//        target.innerHTML = "Score".fontcolor("white")+String(sc).fontcolor("red")+"  点".fontcolor("pink");
+//　      target = document.getElementById("output2");
+//        target.innerHTML = "Rescue".fontcolor("yellow")+String(h).fontcolor("red")+"  回".fontcolor("yellow")+" Dead".fontcolor("yellow")+String(kill).fontcolor("red")+"  回".fontcolor("yellow");
+//        target = document.getElementById("output3");
+//        target.innerHTML = "残り攻撃回数".fontcolor("red")+String(atime/10).fontcolor("red")+"  回".fontcolor("red");
+//        target = document.getElementById("output4");
+//        target.innerHTML = "Hi-score".fontcolor("yellow")+String(bscore).fontcolor("white")+"  点".fontcolor("yellow");
+//            target = document.getElementById("output5");
+//        target.innerHTML = "HHi1-score".fontcolor("yellow")+String(sc).fontcolor("white")+"  点".fontcolor("yellow");
+//        target = document.getElementById("output5");
+//        target.innerHTML = "dice".fontcolor("yellow")+String(dice).fontcolor("white")+"d2-"+String(dice2).fontcolor("yellow")+"d3-"+String(dice3).fontcolor("yellow")+"vd-"+String(vdice).fontcolor("yellow");
+}
+    </script>
+    <script> 
+    function ssave(){
+    var str = JSON.stringify(bscore);
+    localStorage.setItem("test", str);
+    }
+    </script>      
+    <script> 
+    function sscore(){
+    sc=sc+sc1;
+       for (var i=0;i<5;i++){
+    if (hscore[i]<sc){hscore[i]=sc;break;}}}
+    </script>     
+   
+    <script> 
+
+    function rank(){
+    var time1 = new Date().getTime();
+    var time2 = new Date().getTime();
+  
+    while ((time2 - time1)<100){
+    time2 = new Date().getTime();
+    }
+    }      
+    </script>      
+    <script> 
+
+    function conf(){
+    var time1 = new Date().getTime();
+    var time2 = new Date().getTime();
+  
+    while ((time2 - time1)<100){
+    time2 = new Date().getTime();
+    }
+    }      
+    </script>      
+    <script> 
+    function ssc (){
+    var can = document.getElementById("canvas");
+    var ctx = can.getContext("2d");　
+//影
+    ctx.shadowColor = "#300";
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 1;
+    ctx.shadowBlur = 5;
+    ctx.fillRect(5, 12, 455, 605);
+
+    ctx.lineWidth = 5;
+    ctx.fillStyle = "#0ff";
+    ctx.font = "20px cursive";
+    ctx.fillStyle = "red";
+    ctx.fillText("SCORE "+sc, 15, 30);
+     for (var i=0;i<5;++i){
+     ctx.fillText("h"+hscore[i], 155+i*32, 30);
+     }
+    ctx.fillStyle = "yellow";
+    ctx.fillText("残り攻撃回数 "+atime/10+"回", 15, 53);
+    ctx.fillStyle = "pink";
+    ctx.fillText("Rescue "+h+"回"+"  Dead "+kill+"回", 15, 73);
+    ctx.fillStyle ="skyblue";
+    ctx.fillText("HI-Score "+bscore, 15, 93);
+    }
+       </script>      
+       
+<script type="text/javascript">
+document.getElementById("view_time").innerHTML = getNow();
+   <script> 
+    function getNow() {
+    var now = new Date();
+    var year = now.getFullYear();
+    var mon = now.getMonth()+1; //１を足すこと
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+
+	//出力用
+	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒"; 
+	return s;
+}
+</script>
+
+    <script> 
+
+    function wait (){
+    var time1 = new Date().getTime();
+    var time2 = new Date().getTime();
+  
+    while ((time2 - time1)<100){
+     time2 = new Date().getTime();
+    }
+    }      
+       </script>      
+
+<style>
+        body {
+            background-image: url("images/mm20171130_165244.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #hako {
+            margin-top: -5%;
+            margin-left : 0;
+            margin-right : 0;
+        }
+
+        img {
+           width: 60%; 
+        }
+
+        #bottombar {
+            position: absolute;
+            bottom:50px;
+            width: 100%;
+        }
+        #bottombar2 {
+            position:absolute;
+            bottom: -60px;
+            width: 100%;
+        }
+        #bottombar3 {
+            position:absolute;
+            bottom: -63px;
+            width: 100%;
+        }
+
+    </style>
+<!-- </head>> //-->
+<body>
+
+<script type="text/javascript">
+var nend_params = {"media":44187,"site":286599,"spot":836782,"type":1,"oriented":3};
+</script>
+
+<canvas id="canvas" width="300" height="100" ></canvas>
+
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
+    <div id="hako">
+        <img id="saisyo" src="images/shanshan1PU-.png" />
+        <img id="kekka" style="display : none;"/>
+    </div>
+    <div style="text-align:justify" id="output0"></div>
+    <div style="text-align:justify" id="output1"></div>
+　　<div style="text-align:justify" id="output2"></div>
+　　<div style="text-align:justify" id="output3"></div>
+    <div style="text-align:justify" id="output4"></div>
+    <div style="text-align:justify" id="output5"></div>
+    <div id="bottombar">
+    <img id="button" src="images/bu/shan_m1_START.png" onclick="main2()">
+<!--    <div id="bottombar2">
+    <img id="button" src="images/bu/shan_m1_rank.png" onclick="main2()">
+
+<div id="bottombar3">
+    <img id="button" src="images/bu/shan_m1_config.png" onclick="main2()">
+-->       
+   </div>
+
+ 
+
+</body>
+</html>
